@@ -149,7 +149,7 @@ const getTranslations = (lang: Language) => {
             description: 'Starodávna praktika uzdravovacej energie pre fyzické a emocionálne blaho'
           },
           selfDevelopment: {
-            title: 'RAD NA SEBI',
+            title: 'PRÁCA NA SEBE',
             description: 'Osobný rast a transformácia prostredníctvom uvedomelých praktík'
           },
           lifeJourney: {
@@ -187,7 +187,7 @@ const getTranslations = (lang: Language) => {
           }
         },
         selfDevelopment: {
-          title: 'RAD NA SEBI',
+          title: 'PRÁCA NA SEBE',
           subtitle: 'Táto kategória je určená pre každého, kto sa rozhodol urobiť prvý krok k zmene a prevziať zodpovednosť za svoj osobný a duchovný rast.',
           description: 'Osobný rozvoj je proces kontinuálneho rastu a učenia, ktorý vám pomáha objaviť váš skutočný potenciál.',
           sections: {
