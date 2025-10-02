@@ -9,18 +9,18 @@ const LifeJourneyPage = () => {
 
   const sections = [
     {
-      title: t('lifeJourney.sections.story.title'),
-      description: t('lifeJourney.sections.story.description'),
+      title: t('Video 1'),
+      description: t('Be Added...'),
       icon: '🌉'
     },
     {
-      title: t('lifeJourney.sections.guidance.title'),
-      description: t('lifeJourney.sections.guidance.description'),
+      title: t('Video 2'),
+      description: t('Be Added...'),
       icon: '🌟'
     },
     {
-      title: t('lifeJourney.sections.community.title'),
-      description: t('lifeJourney.sections.community.description'),
+      title: t('Video 3'),
+      description: t('Be Added...'),
       icon: '🤝'
     }
   ];
