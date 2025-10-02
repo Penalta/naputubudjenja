@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Spiritual sunset color palette */
+    --background: 25 15% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 20 20% 12%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 30 85% 65%;
+    --primary-foreground: 25 15% 8%;
+
+    --secondary: 25 30% 18%;
+    --secondary-foreground: 35 25% 95%;
+
+    --muted: 25 15% 15%;
+    --muted-foreground: 35 15% 65%;
+
+    --accent: 35 80% 60%;
+    --accent-foreground: 25 15% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 25% 95%;
+
+    --border: 25 20% 25%;
+    --input: 25 20% 25%;
+    --ring: 30 85% 65%;
+
+    --radius: 1rem;
+
+    /* Custom spiritual design tokens */
+    --sunset-primary: 20 85% 55%;
+    --sunset-secondary: 35 80% 60%;
+    --sunset-tertiary: 45 75% 65%;
+    --spiritual-glow: 30 90% 70%;
+    --earth-warm: 25 40% 25%;
+    --earth-deep: 20 30% 15%;
+    
+    /* Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset-primary)), hsl(var(--sunset-secondary)), hsl(var(--sunset-tertiary)));
+    --gradient-spiritual: linear-gradient(180deg, hsl(var(--background)), hsl(var(--earth-deep)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) / 0.8, hsl(var(--earth-warm)) / 0.6);
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--spiritual-glow)) / 0.3, transparent 70%);
+    --gradient-radial: radial-gradient(circle, var(--tw-gradient-stops));
+    
+    /* Shadows */
+    --shadow-spiritual: 0 20px 50px -20px hsl(var(--sunset-primary)) / 0.4;
+    --shadow-card: 0 10px 30px -10px hsl(var(--background)) / 0.6;
+    --shadow-glow: 0 0 60px hsl(var(--spiritual-glow)) / 0.5;
+    
+    /* Typography */
+    --font-heading: "Inter", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    
+    /* Animations */
+    --transition-spiritual: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.8s ease-in-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
