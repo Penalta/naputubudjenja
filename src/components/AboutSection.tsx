@@ -19,19 +19,51 @@ const AboutSection = () => {
           <div className="w-32 h-1.5 bg-gradient-sunset mx-auto rounded-full shadow-glow" />
         </div>
 
-        {/* Content Card with Enhanced Styling */}
-        <div className="relative">
+        {/* Enhanced Content Layout */}
+        <div className="relative space-y-12">
           {/* Decorative corner elements */}
           <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-sunset-primary/30 rounded-tl-3xl" />
           <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-sunset-primary/30 rounded-br-3xl" />
           
-          <div className="relative backdrop-blur-md bg-card/60 border border-border/50 rounded-2xl p-8 md:p-12 shadow-spiritual">
+          {/* Main Content with varied sections */}
+          <div className="relative backdrop-blur-md bg-card/60 border border-border/50 rounded-2xl overflow-hidden shadow-spiritual">
             {/* Inner glow effect */}
-            <div className="absolute inset-0 bg-gradient-radial from-sunset-primary/5 via-transparent to-transparent rounded-2xl" />
+            <div className="absolute inset-0 bg-gradient-radial from-sunset-primary/5 via-transparent to-transparent" />
             
-            <div className="relative space-y-6 text-base md:text-lg leading-relaxed">
-              <div className="whitespace-pre-line text-foreground/95 text-left leading-loose">
-                {t('about.content')}
+            <div className="relative p-8 md:p-12">
+              {/* Introduction paragraphs - first two combined */}
+              <div className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-8 text-center border-l-4 border-sunset-primary pl-6 space-y-6">
+                <p className="italic">
+                  {t('about.content').split('\n\n')[0]}
+                </p>
+                <p className="italic">
+                  {t('about.content').split('\n\n')[1]}
+                </p>
+              </div>
+
+              {/* Main content with consistent styling */}
+              <div className="space-y-8">
+                {t('about.content').split('\n\n').slice(2).map((paragraph, index) => (
+                  <div key={index} className="bg-gradient-to-br from-sunset-primary/5 to-sunset-secondary/5 rounded-xl p-6 border border-sunset-primary/20">
+                    <div className="space-y-3 text-base md:text-lg text-foreground/90 leading-relaxed">
+                      {paragraph.split('\n').map((line, lineIndex) => (
+                        line.trim() && (
+                          <div key={lineIndex} className="flex items-start gap-3">
+                            <span className="text-sunset-primary text-xl mt-1 flex-shrink-0">✦</span>
+                            <span className="flex-1">{line.replace(/^[•✓]\s*/, '').trim()}</span>
+                          </div>
+                        )
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Decorative divider */}
+              <div className="mt-12 flex items-center justify-center gap-4">
+                <div className="h-px bg-gradient-to-r from-transparent via-sunset-primary/50 to-transparent flex-1" />
+                <span className="text-sunset-primary text-2xl">✦</span>
+                <div className="h-px bg-gradient-to-r from-transparent via-sunset-primary/50 to-transparent flex-1" />
               </div>
             </div>
           </div>
