@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex items-center gap-6">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/na_putu_budjenja/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 border border-border/30 hover:border-sunset-primary/50 hover:bg-sunset-primary/10 transition-all group"
