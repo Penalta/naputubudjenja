@@ -96,7 +96,7 @@ const getTranslations = (lang: Language) => {
               description: 'Combination of Reiki with Kundalini energy for deeper healing'
             },
             ecoRei: {
-              title: 'Eco Rei',
+              title: 'Eko Rei',
               description: 'Advanced form of Reiki with emphasis on compassion and kindness'
             },
             angelicReiki: {
@@ -177,7 +177,7 @@ const getTranslations = (lang: Language) => {
               description: 'Kombinácia Reiki s energiou Kundalini pre hlbšie uzdravenie'
             },
             ecoRei: {
-              title: 'Eco Rei',
+              title: 'Eko Rei',
               description: 'Pokročilá forma Reiki s dôrazom na súcit a láskavosť'
             },
             angelicReiki: {
@@ -258,11 +258,11 @@ const getTranslations = (lang: Language) => {
               description: 'Kombinacija Reiki sa Kundalini energijom za dublje isceljenje'
             },
             ecoRei: {
-              title: 'Eco Rei',
+              title: 'Eko Rei',
               description: 'Napredna forma Reiki sa akcentom na saosećanje i ljubaznost'
             },
             angelicReiki: {
-              title: 'Anđeosko Reiki',
+              title: 'Anđeoski Reiki',
               description: 'Isceljenje uz pomoć anđeoske energije i vođenja'
             }
           }
