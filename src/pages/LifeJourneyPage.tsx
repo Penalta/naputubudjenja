@@ -9,9 +9,9 @@ const LifeJourneyPage = () => {
   // Video paths - replace these with your actual video file names
   const videos = [
     {
-      title: t('lifeJourney.sections.story.title'),
-      description: t('lifeJourney.sections.story.description'),
-      videoSrc: "/src/assets/story-video.mp4" // Replace with actual video filename
+      title: t('Video1'),
+      description: t('Video1'),
+      videoSrc: "/src/assets/video1.mp4" // Replace with actual video filename
     },
     {
       title: t('lifeJourney.sections.guidance.title'),
