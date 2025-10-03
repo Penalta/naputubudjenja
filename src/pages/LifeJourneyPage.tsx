@@ -1,27 +1,27 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import BackButton from "@/components/BackButton";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import TechniqueCard from "@/components/TechniqueCard";
 import lifeJourneyImage from "@/assets/life-journey.jpg";
 
 const LifeJourneyPage = () => {
   const { t } = useLanguage();
 
-  const sections = [
+  // Video paths - replace these with your actual video file names
+  const videos = [
     {
-      title: t('Video 1'),
-      description: t('Be Added...'),
-      icon: '🌉'
+      title: t('lifeJourney.sections.story.title'),
+      description: t('lifeJourney.sections.story.description'),
+      videoSrc: "/src/assets/story-video.mp4" // Replace with actual video filename
     },
     {
-      title: t('Video 2'),
-      description: t('Be Added...'),
-      icon: '🌟'
+      title: t('lifeJourney.sections.guidance.title'),
+      description: t('lifeJourney.sections.guidance.description'),
+      videoSrc: "/src/assets/guidance-video.mp4" // Replace with actual video filename
     },
     {
-      title: t('Video 3'),
-      description: t('Be Added...'),
-      icon: '🤝'
+      title: t('lifeJourney.sections.community.title'),
+      description: t('lifeJourney.sections.community.description'),
+      videoSrc: "/src/assets/community-video.mp4" // Replace with actual video filename
     }
   ];
 
@@ -51,25 +51,34 @@ const LifeJourneyPage = () => {
           </p>
         </div>
 
-        {/* Section Cards at Bottom */}
+        {/* Video Sections at Bottom */}
         <div className="relative z-10 w-full px-6 pb-12">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {sections.map((section, index) => (
+              {videos.map((video, index) => (
                 <div 
-                  key={section.title}
-                  className="animate-in slide-in-from-bottom duration-700 bg-black/50 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-black/60 transition-all duration-300 text-center group cursor-pointer"
+                  key={video.title}
+                  className="animate-in slide-in-from-bottom duration-700 bg-black/50 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-300 group"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl">{section.icon}</span>
+                  <div className="relative aspect-video">
+                    <video 
+                      className="w-full h-full object-cover"
+                      controls
+                      preload="metadata"
+                    >
+                      <source src={video.videoSrc} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
-                  <h3 className="text-white font-semibold mb-2 text-base md:text-lg">
-                    {section.title}
-                  </h3>
-                  <p className="text-white/70 text-xs md:text-sm leading-relaxed">
-                    {section.description}
-                  </p>
+                  <div className="p-6 text-center">
+                    <h3 className="text-white font-semibold mb-2 text-base md:text-lg">
+                      {video.title}
+                    </h3>
+                    <p className="text-white/70 text-xs md:text-sm leading-relaxed">
+                      {video.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
