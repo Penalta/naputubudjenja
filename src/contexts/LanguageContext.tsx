@@ -170,11 +170,11 @@ const getTranslations = (lang: Language) => {
             description: 'Starodávna praktika uzdravovacej energie pre fyzické a emocionálne blaho'
           },
           selfDevelopment: {
-            title: 'RAD NA SEBI',
+            title: 'PRÁCA NA SEBE',
             description: 'Osobný rast a transformácia prostredníctvom uvedomelých praktík'
           },
           lifeJourney: {
-            title: 'ŽIVOTNÁ CESTA',
+            title: 'MOJA ŽIVOTNÁ CESTA',
             description: 'Vedenie na vašej ceste k duchovnému prebúdzaniu a vnútornej múdrosti'
           }
         },
