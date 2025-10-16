@@ -1,7 +1,7 @@
 export const translations = {
   sk: {
     nav: {
-      aboutTeacher: 'O učiteľke',
+      aboutTeacher: 'O učiteľovi',
       reiki: 'Reiki',
       academy: 'Akadémia',
       courses: 'Kurzy',
@@ -49,7 +49,7 @@ export const translations = {
       cta: 'Začnite svoju cestu',
     },
     aboutTeacher: {
-      title: 'O mne',
+      title: 'O Učiteľovi',
       photoPlaceholder: 'Fotografia učiteľa',
       bioTitle: 'Na Ceste Prebudenia',
       bioContent: 'Volám sa Nikola a svoj život som zasvätil prebudeniu duše, uzdraveniu, svetlu a láske. Od útleho detstva ma priťahoval svet energií, ezoteriky, posvätnej geometrie, zákonov vesmíru a kolektívneho vedomia. Vždy som cítil hlboké spojenie so Zemou a jej premenami.\n\nNarodil som sa s darom – bioenergiou, kanálovaním, intuitívnymi víziami – ktoré sa postupne rozvíjali. Zažil som intenzívne duchovné procesy – od čistej temnoty až po čisté svetlo. Ako sa hovorí: kto neokúsil tmu, nevie, čo je svetlo. Všetko, čo dnes robím, odovzdávam výlučne z osobnej skúsenosti.\n\nVďaka rokom vnútornej práce a vytrvalosti, a hlavne s pomocou svojich duchovných sprievodcov, som dokázal nájsť seba. Bol to hlboký proces, ale dnes som napojený na svoje vnútro a vedenie, ktoré ma sprevádza v mojom poslaní.\n\nRozhodol som sa systémovo rozvíjať svoje schopnosti cez rôzne techniky ako je Reiki (USUI, Angel, Kundalini, EcoRei) a vytváram aj vlastné energetické a praktické metódy, ktoré prinášajú zmenu.\n\nŠtudujem aj energetickú psychológiu, pretože verím, že človek nie je len fyzické telo – ale bytosť zložená zo šiestich úrovní, a príčina problémov sa často ukrýva hlbšie.',
@@ -67,22 +67,22 @@ export const translations = {
         usui: {
           title: 'Usui Reiki',
           description: 'Nočiv an¹ misioo I vekin jue imate vied več zusame.',
-          cta: 'Saznajte vise',
+          cta: 'Dozvedieť sa viac',
         },
         kundalini: {
           title: 'Kundalini Reiki',
           description: 'Práctice jnvieg. ktelllneéit korake.',
-          cta: 'Saznajte vise',
+          cta: 'Dozvedieť sa viac',
         },
         archangelic: {
           title: 'Andeoski Reiki',
           description: 'Sveuka i sístle arijsrmim sie',
-          cta: 'Saznajte vise',
+          cta: 'Dozvedieť sa viac',
         },
         ekorei: {
           title: 'EkoRei',
           description: 'Spojenie s prírodou a uzdravenie Zeme',
-          cta: 'Saznajte vise',
+          cta: 'Dozvedieť sa viac',
         },
       },
     },
@@ -383,7 +383,7 @@ export const translations = {
       cta: 'Započnite putovanje',
     },
     aboutTeacher: {
-      title: 'O meni',
+      title: 'O učitelju',
       photoPlaceholder: 'Fotografija učitelja',
       bioTitle: 'Na Putu Buđenja',
       bioContent: 'Zovem se Nikola i svoj život sam posvetio buđenju duše, isceljenju, svetlosti i ljubavi. Još od malih nogu bio sam duboko povezan sa svetom energije, ezoterije, svete geometrije, univerzalnih zakona i kolektivne svesti. Proučavao sam energetske tokove, procese kroz koje prolazi planeta Zemlja, i oduvek sam osećao da nisam ovde slučajno.\n\nRođen sam sa izraženim sposobnostima – bioenergija, kanalisanje, intuitivne vizije – koje su se godinama razvijale. Prošao sam kroz intenzivna duhovna iskustva: kroz čisti mrak, ali i čistu svetlost. Kako se kaže: ako ne osetiš mrak, ne znaš ni šta je svetlo. Sve što danas radim i prenosim – dolazi isključivo iz ličnog iskustva.\n\nKroz godine unutrašnjeg rada i predanosti, uz pomoć svojih duhovnih vodiča, uspeo sam da pronađem sebe. Trud je bio ogroman, ali sam se spojio sa sobom i svojim unutrašnjim vodstvom, i danas živim ono što jesam – u istini, prisutnosti i ljubavi.\n\nOdlučio sam da sistematizujem svoja znanja i sposobnosti kroz metode kao što su Reiki (USUI, Angel Reiki, Kundalini Reiki, EcoRei), kao i kroz sopstvene tehnike koje razvijam na osnovu unutrašnjeg vođstva.\n\nProučavam i energetsku psihologiju, jer verujem da čovek nije samo fizičko telo – već biće sastavljeno od šest nivoa postojanja, i uzrok tegoba često leži dublje nego što mislimo.',
